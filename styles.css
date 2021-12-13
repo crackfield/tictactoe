@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+.board {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+}
+
+.cell {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  font-family: Khula, sans-serif;
+  font-size: 100px;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.title {
+  font-family: Khula, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.cell.disabled {
+  pointer-events: none;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+#clear {
+  margin: 20px;
+  padding: 5px 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: all 0.1s ease-in-out;
+}
+
+#clear:hover {
+  cursor: pointer;
+  background-color: rgb(248, 248, 248);
+  transform: scale(1.05);
+}
